@@ -10,8 +10,9 @@ app.use(express.json());
 
 // database connection
 
-mongoose.connect("mongodb://localhost:27017/tutorialmern?readPreference=primary&appname=MongoDB%20Compass&ssl=false", {useNewUrlParser: true,
+mongoose.connect("mongodb+srv://hosein:sultan.1@mern.dplbs.mongodb.net/tutorialmern?retryWrites=true&w=majority", {useNewUrlParser: true,
 useUnifiedTopology: true});
+
 
 
 app.post("/addfriend", async (req, res) => {
