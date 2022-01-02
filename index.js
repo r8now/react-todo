@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 const FriendModel = require("./models/Friends");
-require("dotenv").config;
+require('dotenv').config();
 
 app.use(cors());
 app.use(express.json());
@@ -57,4 +57,5 @@ app.delete('/delete/:id', async(req, res) => {
     res.send("raderad");
 })
 
-app.listen(process.env.PORT || 3001,() => console.log('du är ansluten'));
+app.listen(process.env.PORT || 3001,() => {console.log('du är ansluten'); 
+});
