@@ -9,8 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 // database connection
-
-mongoose.connect("mongodb+srv://hosein:sultan.1@mern.dplbs.mongodb.net/tutorialmern?retryWrites=true&w=majority", {useNewUrlParser: true,
+                       
+mongoose.connect("mongodb+srv://hosein:sultan.1@mern.dplbs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true,
 useUnifiedTopology: true});
 
 
